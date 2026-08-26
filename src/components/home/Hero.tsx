@@ -1,6 +1,6 @@
 import { Button } from '../ui/Button'
 import { Container } from '../ui/Container'
-import { ShieldIcon, SparkIcon, TruckIcon } from '../icons/Icons'
+import { ShieldIcon, SparkIcon, StarIcon, TruckIcon } from '../icons/Icons'
 import { heroImage, socialAvatars } from '../../data/mockData'
 
 const floatCards = [
@@ -23,8 +23,8 @@ export function Hero() {
             ПО ГОРОДУ
           </h1>
           <p className="hero-lead">
-            Лёгкая посадка, городская амортизация и сдержанный силуэт — для тех, кто выбирает
-            комфорт и стиль в одном шаге.
+            Комфорт на каждый день, технологии для движения и сдержанный стиль — кроссовки, которые
+            держат ритм города без компромиссов.
           </p>
           <div className="hero-actions">
             <Button href="/catalog">Смотреть каталог</Button>
@@ -40,7 +40,10 @@ export function Hero() {
             </div>
             <div>
               <strong>10 000+ клиентов</strong>
-              <p>4,9 средняя оценка коллекции</p>
+              <p className="hero-rating">
+                <StarIcon />
+                <span>4,9</span>
+              </p>
             </div>
           </div>
         </div>

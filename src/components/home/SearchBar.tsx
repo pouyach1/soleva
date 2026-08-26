@@ -15,7 +15,7 @@ export function SearchBar({
         type="search"
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        placeholder="Найти модель, например Vortex"
+        placeholder="Найти модель, например Flow"
         autoComplete="off"
       />
     </label>
