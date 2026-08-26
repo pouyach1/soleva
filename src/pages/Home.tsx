@@ -16,10 +16,11 @@ export function Home() {
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState('all')
 
-  const visibleProducts = useMemo(
-    () => filterProducts(products, query, category),
-    [query, category],
-  )
+  const visibleProducts = useMemo(() => {
+    const filtered = filterProducts(products, query, category)
+    const isDefaultView = query.trim() === '' && category === 'all'
+    return isDefaultView ? filtered.slice(0, 5) : filtered
+  }, [query, category])
 
   return (
     <>

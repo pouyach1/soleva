@@ -900,13 +900,9 @@
   }
 }
 
-@media (max-width: 379px) {
+@media (max-width: 340px) {
   .product-grid {
     grid-template-columns: 1fr;
-  }
-
-  .container {
-    width: min(100% - 24px, var(--container));
   }
 }
 
